@@ -1,15 +1,84 @@
 const accounstBlance = document.getElementById('account-balance');
 const donationInput1 = document.getElementById('donation-input-1');
 
+document.getElementById('Noakhali').addEventListener('click', function () {
 
-console.log(accounstBlance.innerText)
+    if (donationInput1.value <= 0 || donationInput1.value === 'string') {
 
-const donate = document.getElementById('donate').addEventListener('click',function(){
-    // console.log(donationInput1.value - );
-    const totalBalance = parseFloat(accounstBlance.innerText) -  parseFloat(donationInput1.value)
-   
+        return alert('invalid amount')
+    }
+    // console.log(accounstBlance.innerText);
+    if (parseFloat(donationInput1.value) > parseFloat(accounstBlance.innerText)) {
+
+        return alert('add your balance')
+    }
+    const totalBalance = parseFloat(accounstBlance.innerText) - parseFloat(donationInput1.value)
+
     accounstBlance.innerText = totalBalance;
+
+    const addBalance = document.getElementById('add-balance');
+    const totalDonate = parseFloat(donationInput1.value) + parseFloat(addBalance.innerText);
+
+    addBalance.innerText = totalDonate;
+    my_modal_1.showModal()
+
 })
+
+
+
+document.getElementById('Feni').addEventListener('click', function () {
+    const donationInput2 = document.getElementById('donation-input-2');
+    const totalBalance = parseFloat(accounstBlance.innerText) - parseFloat(donationInput2.value)
+     console.log('sklgl', totalBalance);
+    accounstBlance.innerText = totalBalance;
+
+    const addBalance2 = document.getElementById('add-balance-2');
+    const totalDonate2 = parseFloat(donationInput2.value) + parseFloat(addBalance2.innerText);
+    // console.log(totalDonate);
+
+    addBalance2.innerText = totalDonate2;
+  
+
+     if (donationInput2.value <= 0 || donationInput2.value === 'string') {
+
+       return alert('invalid amount')
+    }
+     console.log(accounstBlance.innerText);
+    if (parseFloat(donationInput2.value) > parseFloat(accounstBlance.innerText)) {
+
+        return alert('add your balance')
+     }
+     my_modal_1.showModal()
+})
+
+
+
+document.getElementById('Quota').addEventListener('click',function () {
+    const donationInput3 = document.getElementById('donation-input-3');
+    const totalBalance = parseFloat(accounstBlance.innerText) - parseFloat(donationInput3.value)
+     console.log('sklgl', totalBalance);
+    accounstBlance.innerText = totalBalance;
+
+    const addBalance3 = document.getElementById('add-balance-3');
+    const totalDonate3 = parseFloat(donationInput3.value) + parseFloat(addBalance3.innerText);
+    // console.log(totalDonate);
+
+    addBalance3.innerText = totalDonate3;
+  
+
+     if (donationInput3.value <= 0 || donationInput3.value === 'string') {
+
+       return alert('invalid amount')
+    }
+    //  console.log(accounstBlance.innerText);
+    if (parseFloat(donationInput3.value) > parseFloat(accounstBlance.innerText)) {
+
+        return alert('add your balance')
+     }
+     my_modal_1.showModal()
+})
+
+
 
 
 
