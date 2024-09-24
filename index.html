@@ -9,12 +9,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-gray-50  ">
+<body id="blog-btn" class="bg-gray-50  ">
     <!-- Sticky Navbar -->
 
 <header class="sticky top-0 z-50">
     
-    <div class=" bg-[#F9F7F3] shadow-lg p-4 flex-col sm: flex gap-4 justify-between  items-center">
+    <div class=" bg-[#F9F7F3] shadow-lg p-4 flex flex-col md:flex-row justify-between  items-center">
 
         <!-- Blog button on the left -->
         <a id="blog-button" href="blog.html" class=" btn text-lg bg-[#B4F461] px-8 py-2 rounded-md">Blog</a>
@@ -181,7 +181,6 @@
 
          document.getElementById('blog-button').addEventListener('click', function () {
             window.location.href = "blog.html";
-      console.log('gmmh');
          })
     </script>
 

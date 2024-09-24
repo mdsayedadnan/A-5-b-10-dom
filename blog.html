@@ -11,9 +11,9 @@
 <body>
 
     <!-- Sticky Navbar -->
-    <nav class="sticky top-0 z-50 shadow-lg p-4 flex justify-between items-center">
+    <nav class="sticky top-0 z-50 shadow-lg p-4 flex flex-col md:flex-row justify-between items-center">
         <!-- Blog button on the left -->
-        <a id="blog-button" href="blog.html" class=" btn text-lg bg-[#B4F461] px-8 py-2 rounded-md">Blog</a>
+        <a id="blog-btn" href="index.html" class=" btn text-lg bg-[#B4F461] px-8 py-2 rounded-md">Blog</a>
         <!-- Logo in the center -->
         <div class="flex items-center ">
             <img src="./assets/logo.png" alt="Logo" class="h-8 inline">
@@ -28,59 +28,64 @@
 
     </nav>
 
-<section id="blog-button" class="mt-10">
+    <section id="blog-button" class="mt-10">
 
-    <div class="bg-stone-300 p-6 mb-6">
-        <h3 class="font-bold  text-xl">what is document object model dom...?</h3>
-        <p> ans: The Document Object Model (DOM) is a tree-like structure that represents an HTML or XML document,
-            allowing
-            you to access, modify, and interact with elements on a webpage using programming languages 
-            like JavaScript.
-        </p>
+        <div class="bg-stone-300 p-6 mb-6">
+            <h3 class="font-bold  text-xl">what is document object model dom...?</h3>
+            <p> ans: The Document Object Model (DOM) is a tree-like structure that represents an HTML or XML document,
+                allowing
+                you to access, modify, and interact with elements on a webpage using programming languages
+                like JavaScript.
+            </p>
 
-    </div>
+        </div>
 
-    <div class="bg-green-200 p-6" >
-        <h3 class="font-bold  text-xl mt-6">how do you select an element from the dom...?</h3>
-        <p>ans: getElementById()</p>
-    </div>
+        <div class="bg-green-200 p-6">
+            <h3 class="font-bold  text-xl mt-6">how do you select an element from the dom...?</h3>
+            <p>ans: getElementById()</p>
+        </div>
 
-    <br>
-    <div class="bg-stone-300 p-6">
-        <h3 class="font-bold  text-xl mb-3">what is event delegatetion in the contex of dom and whay is it
-            useful...?</h3>
-        <p>ans:
-            Event delegation is attaching one event listener to a parent to manage events for its
-             child elements via
-            event bubbling.
-            <br>
+        <br>
+        <div class="bg-stone-300 p-6">
+            <h3 class="font-bold  text-xl mb-3">what is event delegatetion in the contex of dom and whay is it
+                useful...?</h3>
+            <p>ans:
+                Event delegation is attaching one event listener to a parent to manage events for its
+                child elements via
+                event bubbling.
+                <br>
 
-            Why useful:
-            <br>
+                Why useful:
+                <br>
 
-            Fewer listeners: Better performance.
-            Dynamic elements: Handles new child elements.
-            Simpler code: Centralized event handling.
-        </p>
-    </div>
+                Fewer listeners: Better performance.
+                Dynamic elements: Handles new child elements.
+                Simpler code: Centralized event handling.
+            </p>
+        </div>
 
-    <br>
-    <div class="bg-green-200 p-6">
-        <h3 class="font-bold  text-xl mt-5">how do you manipulate an elements attributes
-             and styles the dom...?</h3>
-        <p>ans:
-            Set attribute: element.setAttribute('attribute', 'value');
-            Get attribute: element.getAttribute('attribute');
-            Remove attribute: element.removeAttribute('attribute');
-            <br>
-            <br>
-            Set style: element.style.property = 'value';
+        <br>
+        <div class="bg-green-200 p-6">
+            <h3 class="font-bold  text-xl mt-5">how do you manipulate an elements attributes
+                and styles the dom...?</h3>
+            <p>ans:
+                Set attribute: element.setAttribute('attribute', 'value');
+                Get attribute: element.getAttribute('attribute');
+                Remove attribute: element.removeAttribute('attribute');
+                <br>
+                <br>
+                Set style: element.style.property = 'value';
 
-        </p>
+            </p>
 
-    </div>
-</section>
+        </div>
+    </section>
+    <script>
 
+        document.getElementById('blog-btn').addEventListener('click', function () {
+            window.location.href = "index.html";
+        })
+    </script>
 </body>
 
 </html>
