@@ -7,7 +7,7 @@ const donateButton = document.getElementById('donation-button');
 
 document.getElementById('Noakhali').addEventListener('click', function () {
     const hedding = document.getElementById('hedding-1').innerText;
-    console.log(hedding);
+  
 
     if (donationInput1.value <= 0 || donationInput1.value === 'string') {
 
@@ -30,22 +30,24 @@ document.getElementById('Noakhali').addEventListener('click', function () {
 
 
     const div = document.createElement('div');
-    div.classList.add('bg-blue-500', 'p-10', 'rounded-md', 'border-indigo-600');
+    div.classList.add('bg-blue-100', 'p-10', 'rounded-md', 'border-indigo-600');
 
     div.innerHTML = `
-        <h2 class="font-semibold bg-slate-400 p-3">${donationInput1.value} Taka is Donnate ${hedding} </h2>
-        <h4 class="text-xl font-semibold">${new Date().toLocaleDateString()}</h4>
+        <h2 class="font-semibold bg-slate-300 p-3">${donationInput1.value} Taka is Donnate ${hedding} </h2>
+        <h4 class="text-xl ml-8 p-3 bg-slate-300 font-semibold"> Date: ${new Date().toLocaleDateString()}</h4>
     `;
     
 
-    const id = document.getElementById('history-section').appendChild(div);
-    console.log(id);
+    document.getElementById('history-section').appendChild(div);
+  
 })
 
 
 
 document.getElementById('Feni').addEventListener('click', function () {
     const donationInput2 = document.getElementById('donation-input-2');
+
+const headding2 =document.getElementById('headding-2').innerText;
 
     if (donationInput2.value <= 0 || donationInput2.value === 'string') {
 
@@ -67,12 +69,24 @@ document.getElementById('Feni').addEventListener('click', function () {
     addBalance2.innerText = totalDonate2;
 
     my_modal_1.showModal()
+
+    const div = document.createElement('div');
+    div.classList.add('bg-blue-100', 'p-10', 'rounded-md', 'border-indigo-600');
+
+    div.innerHTML = `
+        <h2 class="font-semibold bg-slate-300 p-3">${donationInput1.value} Taka is Donnate ${headding2} </h2>
+        <h4 class="text-xl bg-slate-300 font-semibold"> Date: ${new Date().toLocaleDateString()}</h4>
+    `;
+    
+
+    document.getElementById('history-section').appendChild(div);
+  
+
 })
-
-
 
 document.getElementById('Quota').addEventListener('click', function () {
     const donationInput3 = document.getElementById('donation-input-3');
+    const headding3 = document.getElementById('headding-3').innerText;
     const totalBalance = parseFloat(accounstBlance.innerText) - parseFloat(donationInput3.value)
 
     if (donationInput3.value <= 0 || donationInput3.value === 'string') {
@@ -85,10 +99,6 @@ document.getElementById('Quota').addEventListener('click', function () {
         return alert('add your balance')
     }
 
-    // add 
-
-
-    // end   
     accounstBlance.innerText = totalBalance;
 
     const addBalance3 = document.getElementById('add-balance-3');
@@ -96,10 +106,18 @@ document.getElementById('Quota').addEventListener('click', function () {
 
     addBalance3.innerText = totalDonate3;
     my_modal_1.showModal()
+
+    const div = document.createElement('div');
+    div.classList.add('bg-blue-100', 'p-10', 'rounded-md', 'border-indigo-600');
+
+    div.innerHTML = `
+        <h2 class="font-semibold bg-slate-300 p-3">${donationInput1.value} Taka is Donnate ${headding3} </h2>
+        <h4 class="text-xl bg-slate-300 font-semibold"> Date: ${new Date().toLocaleDateString()}</h4>
+    `;
+    document.getElementById('history-section').appendChild(div);
+  
+
 })
-
-
-
 
 document.getElementById('history-button').addEventListener('click', function () {
 

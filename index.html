@@ -11,7 +11,11 @@
 
 <body class="bg-gray-50  ">
     <!-- Sticky Navbar -->
-    <nav class="sticky top-0 z-50 shadow-lg p-4 flex justify-between items-center">
+
+<header class="sticky top-0 z-50">
+    
+    <div class=" bg-[#F9F7F3] shadow-lg p-4 flex justify-between  items-center">
+
         <!-- Blog button on the left -->
         <a id="blog-button" href="blog.html" class=" btn text-lg bg-[#B4F461] px-8 py-2 rounded-md">Blog</a>
         <!-- Logo in the center -->
@@ -23,17 +27,19 @@
         <!-- Account balance with coin icon on the right -->
         <div class="flex items-center space-x-2 ">
             <img src="./assets/coin.png" alt="Coin Icon" class="h-6">
-            <p class="text-xl font-bold"><span id="account-balance">5500</span> BDT</p>
+            <p class="text-xl font-bold"><span id="account-balance">10000</span> BDT</p>
         </div>
 
-    </nav>
-    <div class="flex justify-center space-x-6  mt-14 mb-14">
-        <button id="donation-button" class="bg-green-400 font-semibold text-xl px-10 py-3 rounded-lg">Donation</button>
-        <button id="history-button" class="bg-gray-100 font-semibold text-xl px-10 py-3 rounded-lg">History</button>
     </div>
 
 
-    <main >
+    <div class="flex justify-center space-x-6  mt-10 mb-14">
+        <button id="donation-button" class="bg-green-400 font-semibold text-xl px-10 py-3 rounded-lg">Donation</button>
+        <button id="history-button" class="bg-gray-100 font-semibold text-xl px-12 py-3 rounded-lg">History</button>
+    </div>
+</header>
+
+    <main>
         <section id="card-container">
             <section class="card">
                 <div class="card lg:card-side bg-base-100 mt-5 p-5 shadow-xl">
@@ -79,9 +85,10 @@
                     <div class="card-body">
                         <div class="flex items-center bg-slate-100 rounded-3xl p-2 w-32 space-x-2">
                             <img src="./assets/coin.png" alt="Coin Icon" class="h-6">
-                            <p id="" class="text-xl font-bold"> <span id="add-balance-2"> 600 </span>BDT</p>
+                            <p id="" class="text-xl font-bold"> <span id="add-balance-2"> 1000 </span>BDT</p>
                         </div>
-                        <h2 class="card-title font-bold text-black">Donate for Flood Relief in Feni,Bangladesh</h2>
+                        <h2 id="headding-2" class="card-title font-bold text-black">Donate for Flood Relief in
+                            Feni,Bangladesh</h2>
                         <p> The recent floods in Feni have devastated local communities, leading to severe disruption
                             and
                             loss. Your generous donation will help provide immediate aid, including food, clean water,
@@ -114,9 +121,10 @@
                     <div class="card-body">
                         <div class="flex items-center bg-slate-200 rounded-3xl p-2 w-36 space-x-2">
                             <img src="./assets/coin.png" alt="Coin Icon" class="h-6">
-                            <p class="text-xl font-bold"><span id="add-balance-3">2400</span> BDT</p>
+                            <p class="text-xl font-bold"><span id="add-balance-3">3000</span> BDT</p>
                         </div>
-                        <h2 class="card-title font-bold text-black">Aid for Injured in the Quota Movement</h2>
+                        <h2 id="headding-3" class="card-title font-bold text-black">Aid for Injured in the Quota
+                            Movement</h2>
                         <p> The recent Quota movement has resulted in numerous injuries and significant hardship for
                             many
                             individuals. Your support is crucial in providing medical assistance, rehabilitation, and
@@ -141,42 +149,40 @@
 
             </section>
 
-            
 
-        <div id="show-modal" class="">
-            <dialog id="my_modal_1" class="modal">
-                <div class="modal-box">
-                    <h3 class="text-lg font-bold">Congrates!</h3>
-                    <p class="py-4">You have Donated for Humankind</p>
-                    <h1 class="font-bold text-4xl">Successfully</h1>
-                    <div class="modal-action">
-                        <form method="dialog">
-                            <!-- if there is a button in form, it will close the modal -->
-                            <button class="btn">Close Confarmition</button>
-                        </form>
+
+            <div id="show-modal" class="">
+                <dialog id="my_modal_1" class="modal">
+                    <div class="modal-box">
+                        <h3 class="text-lg font-bold">Congrates!</h3>
+                        <p class="py-4">You have Donated for Humankind</p>
+                        <h1 class="font-bold text-4xl">Successfully</h1>
+                        <div class="modal-action">
+                            <form method="dialog">
+                                <!-- if there is a button in form, it will close the modal -->
+                                <button class="btn">Close Confarmition</button>
+                            </form>
+                        </div>
                     </div>
-                </div>
-            </dialog>
+                </dialog>
 
-        </div>
+            </div>
         </section>
 
         <div id="history-section" class="hidden space-y-7">
 
-            
+
         </div>
 
 
     </main>
-    <footer>
-
-    </footer>
+   
     <script>
 
-        // document.getElementById('blog-button').addEventListener('click', function () {
-        //     window.location.href = "blog.html";
-        //     console.log('qwq');
-        // })
+         document.getElementById('blog-button').addEventListener('click', function () {
+            window.location.href = "blog.html";
+      console.log('gmmh');
+         })
     </script>
 
     <script src="/index.js"></script>
