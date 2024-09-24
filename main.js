@@ -30,11 +30,11 @@ document.getElementById('Noakhali').addEventListener('click', function () {
 
 
     const div = document.createElement('div');
-    div.classList.add('bg-blue-100', 'p-10', 'rounded-md', 'border-indigo-600');
+    div.classList.add('p-10','rounded-md', 'border');
 
     div.innerHTML = `
-        <h2 class="font-semibold bg-slate-300 p-3">${donationInput1.value} Taka is Donnate ${hedding} </h2>
-        <h4 class="text-xl ml-8 p-3 bg-slate-300 font-semibold"> Date: ${new Date().toLocaleDateString()}</h4>
+        <h2 class="font-semibold text-3xl p-3">${donationInput1.value} Taka is Donnate ${hedding} </h2>
+        <h4 class="text-xl ml-8 p-3 font-semibold"> Date: ${new Date()}</h4>
     `;
     
 
@@ -71,11 +71,11 @@ const headding2 =document.getElementById('headding-2').innerText;
     my_modal_1.showModal()
 
     const div = document.createElement('div');
-    div.classList.add('bg-blue-100', 'p-10', 'rounded-md', 'border-indigo-600');
+    div.classList.add('p-10', 'rounded-md', 'border');
 
     div.innerHTML = `
-        <h2 class="font-semibold bg-slate-300 p-3">${donationInput1.value} Taka is Donnate ${headding2} </h2>
-        <h4 class="text-xl bg-slate-300 font-semibold"> Date: ${new Date().toLocaleDateString()}</h4>
+        <h2 class="font-semibold text-3xl p-3">${donationInput1.value} Taka is Donnate ${headding2} </h2>
+        <h4 class="text-xl  font-semibold"> Date: ${new Date()}</h4>
     `;
     
 
@@ -108,11 +108,11 @@ document.getElementById('Quota').addEventListener('click', function () {
     my_modal_1.showModal()
 
     const div = document.createElement('div');
-    div.classList.add('bg-blue-100', 'p-10', 'rounded-md', 'border-indigo-600');
+    div.classList.add('p-10', 'rounded-md', 'border');
 
     div.innerHTML = `
-        <h2 class="font-semibold bg-slate-300 p-3">${donationInput1.value} Taka is Donnate ${headding3} </h2>
-        <h4 class="text-xl bg-slate-300 font-semibold"> Date: ${new Date().toLocaleDateString()}</h4>
+        <h2 class="font-semibold text-3xl p-3">${donationInput1.value} Taka is Donnate ${headding3} </h2>
+        <h4 class="text-xl font-semibold"> Date: ${new Date()}</h4>
     `;
     document.getElementById('history-section').appendChild(div);
   
